@@ -1,13 +1,23 @@
 <script>
+import SingleCard from "./SingleCard.vue"
+import { store } from "../store"
 
 export default {
-    name: "CardsFolder"
+    name: "CardsFolder",
+    components: {
+        SingleCard
+    },
+    data() {
+        return {
+            store
+        }
+    },
 }
 </script>
 
 <template>
-    <div class="container py-5">
-        <h4 class="bg-white">Carte fresche!</h4>
+    <div class="container py-5 row">
+        <SingleCard v-for="(ele, index) in store.arrayCards" :key="index" :CardContent="ele" />
     </div>
 </template>
 
