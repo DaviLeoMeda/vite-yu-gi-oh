@@ -16,8 +16,10 @@ export default {
 </script>
 
 <template>
-    <div class="container py-5 row">
-        <SingleCard v-for="(ele, index) in store.arrayCards" :key="index" :CardContent="ele" />
+    <div class="container py-5">
+        <div class="row">
+            <SingleCard v-for="(ele, index) in store.arrayCards" :key="index" :CardContent="ele" />
+        </div>
     </div>
 </template>
 
