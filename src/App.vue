@@ -30,6 +30,12 @@ export default {
 
           this.store.arrayCards = APIRes
         })
+    },
+    ApiArche() {
+      axios.get('https://db.ygoprodeck.com/api/v7/archetypes.php')
+        .then((res) => {
+          console.log(res)
+        })
     }
   }
 }
