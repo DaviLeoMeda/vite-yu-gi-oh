@@ -11,7 +11,7 @@ export default {
 
 <template>
     <main>
-        <div class="bg-oranger text-center">
+        <div class="bg-oranger d-flex flex-column justify-content-center">
             <CardsFolder />
         </div>
     </main>

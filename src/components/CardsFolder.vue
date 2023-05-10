@@ -2,6 +2,7 @@
 import SingleCard from "./SingleCard.vue"
 import { store } from "../store"
 
+
 export default {
     name: "CardsFolder",
     components: {
