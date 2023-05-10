@@ -34,7 +34,10 @@ export default {
     ApiArche() {
       axios.get('https://db.ygoprodeck.com/api/v7/archetypes.php')
         .then((res) => {
-          console.log(res)
+
+          const APIArchety = res.archetype_name
+
+          this.store.arrayChar = APIArchety
         })
     }
   }
